@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        input[type=submit]{
+            background-color: lightsalmon;
+        }
+        input[name=userid]{
+            background-color: lightseagreen;
+        }
+        input[name=password]{
+            background-color: lightblue;
+        }
+        #tag1:active{
+            color: aqua;
+        }
+        #tag2:hover{
+            color: black;
+        }
+        #won>li::after{
+            content: '원';
+        }
+        #dollar>li::before{
+            content: '$';
+        }
+    </style>
+</head>
+<body>
+    <h3>4.CSS 기타 선택자</h3>
+    <h4>속성 선택자</h4>
+    <form action="#">
+        <input type="text" name="userid">
+        <input type="password" name="password">
+        <input type="submit" name="로그인">
+    </form>    
+    <h4>반응 선택자</h4>
+    <h1 id="tag1">active</h1>
+    <h1 id="tag2">hover</h1>
+
+    <h4>가상요소 선택자</h4>
+    <ul id="won">
+        <li>2,000</li>
+        <li>3,000</li>
+        <li>4,000</li>
+    </ul>
+    <ul id="dollar">
+        <li>2,000</li>
+        <li>3,000</li>
+        <li>4,000</li>
+    </ul>
+</body>
+</html>

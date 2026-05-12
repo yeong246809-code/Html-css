@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css 가시속성 실습</title>
+        <style>
+            /* span태그는 inline 형식이므로 크기를 가질수없음*/
+            div>span{
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+            }
+            /* div 태그는 block형식이므로 크기를 가질수있음 */
+            div>div{
+                background-color: green;
+                width: 100px;
+                height: 100px;
+            }
+            .box1>.child1{
+                display: none;
+            }
+            .box1>.child2{
+                visibility: hidden;
+            }
+            .box2>.child2{
+                display: block;
+            }
+            .box3>.child2{
+                display: inline;
+            }
+            .box4>.child2{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>css 가시속성 실습</h3>
+
+        <h4>display:none</h4>
+        <div class="box1">
+            <span class="child1">span1</span>
+            <span class="child2">span2</span>
+            <span class="child3">span3</span>
+        </div>
+
+        <h4>display:block</h4>
+        <div class="box2">
+            <span class="child1">span1</span>
+            <span class="child2">span2</span>
+            <span class="child3">span3</span>
+        </div>
+        
+        <h4>display:inline</h4>
+        <div class="box3">
+            <span class="child1">span1</span>
+            <div class="child2">div2</div>
+            <span class="child3">span3</span>
+        </div>
+        
+        <h4>display:inline-block</h4>
+        <div class="box4">
+            <span class="child1">span1</span>
+            <div class="child2">div2</div>
+            <span class="child3">span3</span>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css 선택자 실습</title>
+        <style>
+            /* 전체선택자 */
+            *{
+                background-color: black;
+                color: aqua;
+            }
+            
+            /* 태그선택자 */
+            h3{                              
+                color: red;
+            }
+            p{
+                color: lightgreen;
+            }
+            
+            /* 클래스선택자 */
+            .text{
+                color: lightsalmon;
+            }
+            
+            /* 아이디선택자 */
+            #text{
+                color: beige;
+            }
+            
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <h3>css 선택자</h3>
+            <!-- class 속성
+            하나이상의 태그에 설정하는 그룹값
+            여러태그의 공통의 스타일을 처리하기 위한 값 -->
+        <p>
+            Hello World <br>
+            Hello CSS
+        </p>
+        <p class="text"> 
+            Hello World <br>
+            Hello CSS
+        </p>
+        <p class="text">
+            Hello World <br>
+            Hello CSS
+        </p>
+        <p id="text" class="text">
+            Hello World <br>
+            Hello CSS
+        </p>
+        <!--id속성 
+        오직 하나의 태그를 식별하기 위한 유일값
+        버튼에 대한 이벤트 처리에 사용-->
+        
+
+    </body>
+</html>

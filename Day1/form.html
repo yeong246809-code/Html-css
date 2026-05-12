@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>폼 입력 태그 실습</Title>
+        
+    </head>
+    <body>
+        <h3>폼 입력 태그</h3>
+
+
+        <h4>로그인 폼</h4>
+        <form action="http://google.com">
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="userid" placeholder="아이디를 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="password" name="userpassword" placeholder="비밀번호를 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" value="로그인">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h4>회원가입</h4>
+        <form action="http://google.com">
+            <table border="1">
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="userid" placeholder="아이디 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="password" name="userpassword" placeholder="비밀번호 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td>
+                        <input type="text" name="username" placeholder="이름 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td>
+                        <input type="date" name="birth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>
+                        <input type="email" name="email" placeholder="이메일 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>나이</td>
+                    <td>
+                        <input type="number" name="age" placeholder="나이 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <label><input type="radio" name="gender" value="M"></label>남
+                        <label><input type="radio" name="gender" value="F"></label>여
+                    </td>
+                </tr>
+                <tr>
+                    <td>취미</td>
+                    <td>
+                        <label><input type="checkbox" name="hobby" value="등산"></label>등산
+                        <label><input type="checkbox" name="hobby" value="영화"></label>영화
+                        <label><input type="checkbox" name="hobby" value="독서"></label>독서
+                        <label><input type="checkbox" name="hobby" value="운동"></label>운동
+                        <label><input type="checkbox" name="hobby" value="게임"></label>게임
+                    </td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <select name="address">
+                            <option>서울</option>
+                            <option>대전</option>
+                            <option>대구</option>
+                            <option>부산</option>
+                            <option>광주</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>인사말</td>
+                    <td>
+                        <textarea name="hello" rows="10" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="2">
+                        <input type="submit" value="등록하기" >
+                    </td>
+                </tr>
+            </table>    
+        </form>
+    </body>
+</html>

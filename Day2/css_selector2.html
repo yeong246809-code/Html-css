@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 자손 선택자 실습</title>
+        <style>
+            /* 자식선택자 */
+            section>h3{
+                color: blue;
+            }
+            body>h3{
+                color: lightblue;
+            }
+            .txt1>i{
+                background-color: gray;
+            }
+            .txt2>i{
+                background-color: lightyellow;
+            }
+            .txt1 b{
+                color: azure;
+            }
+            .txt2 b{
+                color: red;
+            }
+
+            /* 후손 선택자 */
+
+        </style>
+    </head>
+    <body>
+        <h3>CSS 자손 선택자 실습</h3>
+        <section>
+            <h3>애국가</h3>
+            <p class="txt1">
+                동해물과 백두산이 마르고 닳도록<br>
+                <i>무궁화 삼천리 <b>화려강산</b></i>
+            </p>
+            <p class="txt2">
+                남산위에 저소나무 철갑을 두른듯<br>
+                <i>무궁화 삼천리 <b>화려강산</b></i>
+            </p>
+            
+
+        </section>
+    </body>
+</html>
